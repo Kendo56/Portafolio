@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de - Criptode</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        /* Fondo de la página - Gradiente suave */
+        body {
+            background: linear-gradient(135deg, #A7C7E7, #F1F6F9); 
+        }
+
+        /* Estilo del contenedor principal (caja del dashboard) */
+        .dashboard-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Contenido principal */
+        .main-content {
+            flex-grow: 1;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin: 2rem;
+        }
+
+        /* Título del "Acerca de" */
+        .about-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #4A4A4A;
+            margin-bottom: 2rem;
+        }
+
+        /* Sección de introducción */
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #4A4A4A;
+            margin-bottom: 1rem;
+        }
+
+        .section-content {
+            font-size: 1rem;
+            color: #6B7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        /* Sección de Equipo de Desarrollo */
+        .team-section {
+            background-color: #FBBF24; /* Fondo amarillo */
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .team-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .team-content {
+            font-size: 1rem;
+            color: #4A4A4A;
+            margin-top: 1rem;
+        }
+
+        /* Pie de página */
+        .footer {
+            background-color: #F1F6F9;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+            border-radius: 10px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #4A4A4A;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #FBBF24;
+        }
+
+        /* Estilo del botón para regresar al inicio */
+        .back-to-home {
+            background-color: #FBBF24;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+            width: 200px;
+            margin: 2rem auto;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-home:hover {
+            background-color: #F59E0B;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor principal del dashboard -->
+    <div class="dashboard-container">
+        <!-- Enlace para regresar al inicio -->
+        <a href="dashboard.html" class="back-to-home">Volver al Inicio</a>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <h1 class="about-title">Acerca de Criptode</h1>
+
+            <!-- Sección de Introducción -->
+            <div class="section">
+                <div class="section-title">¿Qué es Criptode?</div>
+                <div class="section-content">
+                    <p>
+                        Criptode es una plataforma web creada para facilitar la gestión y monitoreo de precios de criptomonedas en tiempo real. Con un diseño intuitivo y sencillo de usar, nuestro objetivo es brindar a los usuarios una herramienta poderosa para el seguimiento de sus inversiones en criptomonedas.
+                    </p>
+                    <p>
+                        Criptode no solo ofrece precios en tiempo real, sino también herramientas para comparar criptomonedas y visualizar su comportamiento histórico, permitiendo así a los usuarios tomar decisiones más informadas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sección de Objetivos -->
+            <div class="section">
+                <div class="section-title">Nuestros Objetivos</div>
+                <div class="section-content">
+                    <p>
+                        El principal objetivo de Criptode es proporcionar una plataforma confiable y fácil de usar para todos los interesados en el mercado de criptomonedas. Algunos de nuestros objetivos principales incluyen:
+                    </p>
+                    <ul class="list-disc pl-5">
+                        <li>Precios en tiempo real de criptomonedas populares (Bitcoin, Ethereum, Litecoin, etc.).</li>
+                        <li>Comparación de precios entre diferentes criptomonedas.</li>
+                        <li>Acceso a datos históricos para realizar análisis detallados.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sección del equipo de desarrollo -->
+            <div class="team-section">
+                <div class="team-title">El Equipo de Desarrollo</div>
+                <div class="team-content">
+                    <p>
+                        Criptode fue desarrollado por un equipo de entusiastas de la tecnología y las criptomonedas con el objetivo de ayudar a usuarios de todo el mundo a comprender mejor el mercado de criptomonedas y tomar decisiones informadas.
+                    </p>
+                    <p>
+                        El equipo está formado por profesionales en áreas de desarrollo web, análisis de datos y economía digital. Cada miembro aporta su experiencia y pasión por la tecnología para asegurar que Criptode sea una herramienta confiable y fácil de usar para todos los usuarios.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie de página -->
+        <div class="footer">
+            <p class="text-gray-700 mb-2">Síguenos en nuestras redes sociales:</p>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+    </div>
+
+</body>
+</html>

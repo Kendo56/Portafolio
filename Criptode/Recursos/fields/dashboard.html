@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptode</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        /* Fondo de la página - Gradiente suave */
+        body {
+            background: linear-gradient(135deg, #A7C7E7, #F1F6F9); 
+        }
+
+        /* Estilo del contenedor principal (caja del dashboard) */
+        .dashboard-container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Sidebar de navegación */
+        .sidebar {
+            width: 250px;
+            background-color: #ffffff;
+            box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            position: relative;
+        }
+
+        /* Logo en el sidebar */
+        .sidebar-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin: 0 auto 2rem;
+            border-radius: 50%;
+        }
+
+        /* Enlaces del sidebar */
+        .sidebar-link {
+            display: block;
+            text-align: center;
+            padding: 1rem;
+            text-decoration: none;
+            color: #4A4A4A;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin-bottom: 1rem;
+        }
+
+        .sidebar-link:hover {
+            background-color: #FBBF24;
+            color: white;
+        }
+
+        /* Contenido principal */
+        .main-content {
+            flex-grow: 1;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-left: 1rem;
+        }
+
+        /* Título del dashboard */
+        .dashboard-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #4A4A4A;
+            margin-bottom: 2rem;
+        }
+
+        /* Tarjetas del dashboard */
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #4A4A4A;
+        }
+
+        .card-content {
+            font-size: 1rem;
+            color: #6B7280;
+            margin-top: 1rem;
+        }
+
+        /* Enlace en la tarjeta */
+        .card-link {
+            display: block;
+            padding: 10px;
+            background-color: #FBBF24;
+            color: white;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 1rem;
+            text-decoration: none;
+        }
+
+        .card-link:hover {
+            background-color: #F59E0B;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor principal del dashboard -->
+    <div class="dashboard-container">
+        <!-- Sidebar de navegación -->
+        <div class="sidebar">
+            <img src="../Images/Logo/Criptode_logo.jpg" alt="Logo de Criptode" class="sidebar-logo">
+
+            <a href="https://accounts.binance.com/en/register?ref=1041379462&gad_source=1&gclid=Cj0KCQiA4fi7BhC5ARIsAEV1YiZeenlWPZu8_i5ADIN_095GkKPgY1mw1GjOQoagaCY2nTJC6hL9W9QaAkIeEALw_wcB" class="sidebar-link">Binance</a>
+            <a href="acercade.html" class="sidebar-link">Acerca De</a>
+            <a href="../Forms/lagout.php" class="sidebar-link">Cerrar Sesión</a>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <h1 class="dashboard-title">Bienvenido a Criptode</h1>
+
+            <!-- Tarjetas de contenido con enlaces -->
+            <div class="card">
+                <div class="card-title">Valor de una cripto</div>
+                <div class="card-content">Aquí se mostrará el precio actual de una criptomoneda.</div>
+                <a href="valor_cripto.html" class="card-link">Ver precios</a>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Monitorear</div>
+                <div class="card-content">Consultar el valor de una cripto después de cierto tiempo.</div>
+                <a href="monitorear.html" class="card-link">Configurar monitoreo</a>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Cambio Porcentual</div>
+                <div class="card-content">Observa el cambio porcentual de una criptomoneda en 24hr, y determina si fue positivo o negativo.</div>
+                <a href="porcentual.html" class="card-link">¡Observar  Cambio!</a>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Tabla de precios de criptomonedas</div>
+                <div class="card-content">Aquí podrás ver una tabla de todas las criptomonedas y su valor.</div>
+                <a href="../Scripts/tabla_valor.php" class="card-link">Ver tabla</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

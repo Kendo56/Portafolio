@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitorear Criptomoneda</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        /* Fondo y estilos generales */
+        body {
+            background: linear-gradient(135deg, #A7C7E7, #F1F6F9);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 2rem;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .form-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #4A4A4A;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            font-size: 1rem;
+            color: #4A4A4A;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        input[type="number"], input[type="text"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            font-size: 1rem;
+            color: #4A4A4A;
+            background-color: #F9FAFB;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="number"]:hover, input[type="text"]:hover {
+            border-color: #FBBF24;
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #FBBF24;
+            color: white;
+            border-radius: 8px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            margin-top: 1rem;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn-submit:hover {
+            background-color: #F59E0B;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor principal -->
+    <div class="main-container">
+        <!-- Formulario de monitoreo -->
+        <div class="form-container">
+            <h1 class="form-title">Configura el Monitoreo</h1>
+            <form action="../Scripts/monitoreo.php" method="POST">
+                <!-- Campo de número para tiempo de monitoreo -->
+                <div class="form-group">
+                    <label for="time">Tiempo de monitoreo (en segundos)</label>
+                    <input type="number" id="time" name="time" min="5" max="100" step="5" placeholder="Ej. 5, 10, 15..." required>
+                </div>
+
+                <!-- Campo de entrada para la criptomoneda -->
+                <div class="form-group">
+                    <label for="crypto">Nombre de la criptomoneda</label>
+                    <input type="text" id="crypto" name="crypto" placeholder="Ej. Bitcoin, Ethereum" required>
+                </div>
+
+                <!-- Botón para enviar el formulario -->
+                <button type="submit" class="btn-submit">Consultar monitoreo</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

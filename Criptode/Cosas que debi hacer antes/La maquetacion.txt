@@ -1,0 +1,3 @@
+La razón por la cual debí hacer una maquetación antes, es por el hecho de que a la hora de hacer el dashboard, NO tenia idea de como iba hacer, por lo que me quede minutos pensando en como hacerlo, cosa que no es muy conveniente en un proyecto real. 
+
+Me salte la regla de Tener una maquetación antes de hacer una pagina web.

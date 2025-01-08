@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio Porcentual de Criptomonedas en 24hr</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        /* Fondo y estilos generales */
+        body {
+            background: linear-gradient(135deg, #A7C7E7, #F1F6F9);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 2rem;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .form-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #4A4A4A;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            font-size: 1rem;
+            color: #4A4A4A;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            font-size: 1rem;
+            color: #4A4A4A;
+            background-color: #F9FAFB;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:hover {
+            border-color: #FBBF24;
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #FBBF24;
+            color: white;
+            border-radius: 8px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            margin-top: 1rem;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn-submit:hover {
+            background-color: #F59E0B;
+        }
+
+        /* Estilo para mostrar el resultado */
+        .result-container {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #F9FAFB;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.25rem;
+            color: #4A4A4A;
+        }
+
+        .positive {
+            color: green;
+        }
+
+        .negative {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor principal -->
+    <div class="main-container">
+        <!-- Formulario de cambio porcentual -->
+        <div class="form-container">
+            <h1 class="form-title">Cambio Porcentual de Criptomonedas</h1>
+            <form action="../Scripts/cambio_porcentual.php" method="POST">
+                <!-- Campo de criptomoneda 1 -->
+                <div class="form-group">
+                    <label for="crypto1">Criptomoneda 1</label>
+                    <input type="text" id="crypto1" name="crypto1" placeholder="Ej. Bitcoin, Ethereum" required>
+                </div>
+                <!-- Botón para calcular el cambio porcentual -->
+                <button type="submit" class="btn-submit">Calcular Cambio</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

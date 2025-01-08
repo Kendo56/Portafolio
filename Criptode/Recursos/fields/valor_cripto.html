@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Valor de Criptomoneda</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        /* Fondo de la página - Gradiente suave */
+        body {
+            background: linear-gradient(135deg, #A7C7E7, #F1F6F9); 
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            color: #4A4A4A;
+        }
+
+        .input-box {
+            margin-bottom: 1.5rem;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        .input-box button {
+            padding: 0.75rem 1.5rem;
+            background-color: #FBBF24;
+            color: white;
+            border-radius: 8px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .input-box button:hover {
+            background-color: #F59E0B;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Consulta el Valor de una Criptomoneda</h1>
+
+        <!-- Formulario para ingresar el nombre de la criptomoneda -->
+        <form action="../Scripts/valor_criptos.php" method="POST">
+            <div class="input-box">
+                <input type="text" name="cryptoName" placeholder="Ingresa el nombre de la criptomoneda (ej. bitcoin)" required />
+                <button type="submit">Consultar Valor</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
