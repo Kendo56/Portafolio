@@ -20,7 +20,7 @@ if ($result->num_rows > 0) {
     // Credenciales correctas, inicia sesión
     $_SESSION['email'] = $email;
     // Redirige al contenido principal que es el dashboard
-    header("Location: ../fields/dashboard.html");
+    header("Location: ../main/dashboard.html");
     exit();
 } else {
     // Si no encuentra uno de los dos en la base de datos, entonces le dara este mensaje
