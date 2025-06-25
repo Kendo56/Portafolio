@@ -1,0 +1,69 @@
+{
+    // Aqui declaramos que el bloque carrusel tendra 6 Imagenes
+    "slider-layout#homedescuentos": {
+      "children": [
+        "stack-layout#slider1",
+        "stack-layout#slider2"
+
+      ],
+      "title": "Slider Descuentos",
+      "props": {
+        "itemsPerPage": 1,
+        "fullWidth": true,
+        "right": "500px",
+        "height": "500px",  
+        "showNavigationArrows": "always",
+        "autoplay": {
+          "timeout": 7000, // Cambia cada 7 segundos
+          "stopOnHover": true // Se detiene si el usuario pone el cursor encima
+        },
+        "blockClass": "slider-descuentos"
+      }
+    },
+    //Estas son las imagenes de el carrusel
+
+    "stack-layout#slider1": {
+      "children": [ "image#branddescuentos", "link#branddescuentos"],
+      "props": {
+          "blockClass": "contenedor-banner-descuentos"
+      }
+    },
+
+    "image#branddescuentos": {
+      "props": {
+        "src": "https://studiofpaqa.vtexassets.com/assets/vtex.file-manager-graphql/images/11d4526e-b900-48bc-9887-e8f12051a25d___5e7f6a2a16b3daede30826a8b521f50a.jpg"
+      }
+    },
+
+     "link#branddescuentos":{
+        "title": "Nombre y link",
+        "props": {
+            "href": "/basic-jeans/producto",
+            "label": "COMPRAR",
+            "blockClass": "link-totalLook"
+        }
+    },
+    "stack-layout#slider2": {
+      "children": [ "image#branddescuentos2", "link#branddescuentos2"],
+      "props": {
+          "blockClass": "contenedor-banner-descuentos"
+      }
+    },
+
+    "image#branddescuentos2": {
+      "props": {
+        "src": "https://studiofpaqa.vtexassets.com/assets/vtex.file-manager-graphql/images/11d4526e-b900-48bc-9887-e8f12051a25d___5e7f6a2a16b3daede30826a8b521f50a.jpg"
+      }
+    },
+
+     "link#branddescuentos2":{
+        "title": "Nombre y link",
+        "props": {
+            "href": "/basic-jeans/producto",
+            "label": "COMPRAR",
+            "blockClass": "link-25porciento"
+        }
+    }
+
+  }
+  

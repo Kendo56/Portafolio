@@ -1,0 +1,103 @@
+{
+    // Aqui declaramos que el bloque carrusel tendra 6 Imagenes
+    "slider-layout#home4": {
+      "children": [
+        "stack-layout#sliderSecundario",
+        "stack-layout#sliderSecundario2",
+        "stack-layout#sliderSecundario3",
+        "stack-layout#sliderSecundario4"
+      ],
+      "title": "Slider Categorias",
+      "props": {
+        "height": "500px",  
+        "showNavigationArrows": "always",
+        "blockClass": "principal-slide",
+        "autoplay": {
+        "timeout": 7000, // Cambia cada 7 segundos
+        "stopOnHover": true // Se detiene si el usuario pone el cursor encima
+        }
+      }
+    },
+    //Tops
+    "stack-layout#sliderSecundario": {
+      "children": [ "image#brandSecundaria", "link#brand#Secundario"],
+      "props": {
+          "blockClass": "contenedor-boton"
+      }
+    },
+    "image#brandSecundaria": {
+      "props": {
+        "src": "#"
+      }
+    },
+    "link#brand#Secundario":{
+        "title": "#",
+        "props": {
+            "href": "#",
+            "label": "TOPS",
+            "blockClass": "link-categorias"
+        }
+    },
+    //Jeans
+    "stack-layout#sliderSecundario2": {
+      "children": [ "image#brandSecundaria2", "link#brand#Secundario2"],
+      "props": {
+          "blockClass": "contenedor-boton"
+      }
+    },
+    "image#brandSecundaria2": {
+      "props": {
+        "src": "#"
+      }
+    },
+    "link#brand#Secundario2":{
+        "title": "#",
+        "props": {
+            "href": "#",
+            "label": "JEANS",
+            "blockClass": "link-categorias"
+        }
+    },
+    //Vestidos
+    "stack-layout#sliderSecundario3": {
+      "children": [ "image#brandSecundaria3", "link#brand#Secundario3"],
+      "props": {
+          "blockClass": "contenedor-boton"
+      }
+    },
+    "image#brandSecundaria3": {
+      "props": {
+        "src": "#"
+      }
+    },
+    "link#brand#Secundario3":{
+        "title": "#",
+        "props": {
+            "href": "#",
+            "label": "VESTIDOS",
+            "blockClass": "link-categorias"
+        }
+    },
+    //Zapatos
+    "stack-layout#sliderSecundario4": {
+      "children": [ "image#brandSecundaria4", "link#brand#Secundario4"],
+      "props": {
+          "blockClass": "contenedor-boton"
+      }
+    },
+    "image#brandSecundaria4": {
+      "props": {
+        "src": "#"
+      }
+    },
+    "link#brand#Secundario4":{
+        "title": "#",
+        "props": {
+            "href": "#",
+            "label": "ZAPATOS",
+            "blockClass": "link-categorias"
+        }
+    }
+
+  }
+  

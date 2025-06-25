@@ -1,0 +1,12 @@
+.flexCol{
+    background-color: white;
+}
+.flexRowContent{
+    background-color: white;
+}
+.stretchChildrenWidth{
+    display: flex;
+}
+.flexColChild.flexColChild--contentProductMini{
+    margin-top: 10px;
+}

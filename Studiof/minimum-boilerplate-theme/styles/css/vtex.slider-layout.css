@@ -1,0 +1,22 @@
+.slideChildrenContainer {
+    position: relative;
+    width: 100%;
+}
+
+.slideChildrenContainer.slideChildrenContainer--principal-slide {
+    width: 100%;
+}
+.imageElement.imageElement--imagesHome.imageElement--methods{
+    font-size: 15px;
+    margin-top: 200px;
+}
+@media screen and (max-width: 640px) {
+    .slideChildrenContainer.slideChildrenContainer--slider-descuentos{
+        display: none;
+    }
+}
+@media screen and (max-width: 640px) {
+    .slideChildrenContainer.slideChildrenContainer--slider-recomendados{
+        display: none;
+    }
+}

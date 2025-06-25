@@ -1,0 +1,130 @@
+{
+    // Aqui declaramos que el bloque carrusel tendra 6 Imagenes
+    "slider-layout#homeMovile": {
+      "children": [
+        "stack-layout#sliderPrincipalMovile1",
+        "stack-layout#sliderPrincipalMovile2",
+        "stack-layout#sliderPrincipalMovile3",
+        "stack-layout#sliderPrincipalMovile4",
+        "stack-layout#sliderPrincipalMovile5"
+      ],
+      "title": "Slider Principal Movile",
+      "props": {
+        "itemsPerPage": 1,
+        "fullWidth": true,
+        "showNavigationArrows": "always",
+        "autoplay": {
+          "timeout": 7000, // Cambia cada 7 segundos
+          "stopOnHover": true // Se detiene si el usuario pone el cursor encima
+        }
+      }
+    },
+    //Mediterraneo
+     "stack-layout#sliderPrincipalMovile1": {
+      "children": [ "image#brand1", "link#brand#PrincipalMovile1"],
+      "props": {
+          "blockClass": "contenedor-banner-principal"
+      }
+    },
+    "image#brand1": {
+      "props": {
+        "src": "#"
+      }
+    },
+    "link#brand#PrincipalMovile1":{
+        "title": "#",
+        "props": {
+            "href": "#",
+            "label": "COMPRAR",
+            "blockClass": "link-banner-movil"
+        }
+    },
+
+//White collection
+     "stack-layout#sliderPrincipalMovile2": {
+      "children": [ "image#brand2", "link#brand#PrincipalMovile2"],
+      "props": {
+          "blockClass": "contenedor-banner-principal"
+      }
+    },
+    "image#brand2": {
+      "props": {
+        "src": "#"
+      }
+    },
+    "link#brand#PrincipalMovile2":{
+        "title": "#",
+        "props": {
+            "href": "#",
+            "label": "COMPRAR",
+            "blockClass": "link-banner-movil"
+        }
+    },
+
+    //Blusones
+    
+     "stack-layout#sliderPrincipalMovile3": {
+      "children": [ "image#brand3", "link#brand#PrincipalMovile3"],
+      "props": {
+          "blockClass": "contenedor-banner-principal"
+      }
+    },
+
+
+    "image#brand3": {
+      "props": {
+        "src": "#"
+      }
+    },
+    "link#brand#PrincipalMovile3":{
+        "title": "#",
+        "props": {
+            "href": "#",
+            "label": "COMPRAR",
+            "blockClass": "link-banner-movil"
+        }
+    },
+    //Caribbean
+    "stack-layout#sliderPrincipalMovile4": {
+      "children": [ "image#brand4", "link#brand#PrincipalMovile4"],
+      "props": {
+          "blockClass": "contenedor-banner-principal"
+      }
+    },
+
+    "image#brand4": {
+      "props": {
+        "src": "#"
+      }
+    },
+    "link#brand#PrincipalMovile4":{
+        "title": "#",
+        "props": {
+            "href": "#",
+            "label": "COMPRAR",
+            "blockClass": "link-banner-movil"
+        }
+    },
+
+    //Fiestas y eventos
+    "stack-layout#sliderPrincipalMovile5": {
+      "children": [ "image#brand5", "link#brand#PrincipalMovile5"],
+      "props": {
+          "blockClass": "contenedor-banner-principal"
+      }
+    },
+    "image#brand5": {
+      "props": {
+        "src": "#"
+      }
+    },
+    "link#brand#PrincipalMovile5":{
+        "title": "#",
+        "props": {
+            "href": "#",
+            "label": "COMPRAR",
+            "blockClass": "link-banner-movil"
+        }
+    }
+  }
+  

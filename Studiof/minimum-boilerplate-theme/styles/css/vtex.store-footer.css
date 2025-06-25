@@ -1,0 +1,16 @@
+.socialNetworksContainer{/*Centrar los logos de las redes sociales*/
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+}
+
+@media screen and (max-width: 1366px) { /*Query de las redes sociales portatil*/
+    .socialNetworksContainer{
+        margin-top: 100px;
+    } 
+}
+@media screen and (max-width: 640px) { /*Query de las redes sociales movil*/
+    .socialNetworksContainer{
+        margin-top: 50px;
+    } 
+}

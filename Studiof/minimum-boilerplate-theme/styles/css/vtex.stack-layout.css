@@ -1,0 +1,44 @@
+/*Stack categorias*/
+.stackItem.stackItem--contenedor-boton.stackItem--link-categorias.stackItem--contenedor-boton--link-categorias{
+    position: relative;
+}
+/*Stack movil del slider principal*/
+.stackItem.stackItem--contenedor-banner-principal.stackItem--link-banner-movil.stackItem--contenedor-banner-principal--link-banner-movil{
+    position: relative;
+}
+/*Stacks de categorias 2*/
+.stackItem.stackItem--contenedor-categorias-2.stackItem--link-categorias2.stackItem--contenedor-categorias-2--link-categorias2{
+    position: relative;
+}
+/*Mediterraneo*/
+.stackItem.stackItem--contenedor-banner-principal.stackItem--link-mediterraneo.stackItem--contenedor-banner-principal--link-mediterraneo{
+    position: relative;
+}
+/*White collection*/
+.stackItem.stackItem--contenedor-banner-principal.stackItem--link-white-collection.stackItem--contenedor-banner-principal--link-white-collection{
+    position: relative;
+}
+/*Blusones*/
+.stackItem.stackItem--contenedor-banner-principal.stackItem--link-blusones.stackItem--contenedor-banner-principal--link-blusones{
+    position: relative;
+}
+/*Caribbean Getaway*/
+.stackItem.stackItem--contenedor-banner-principal.stackItem--link-caribbean.stackItem--contenedor-banner-principal--link-caribbean{
+    position: relative;
+}
+/*Fiestas y eventos*/
+.stackItem.stackItem--contenedor-banner-principal.stackItem--link-fiestas-eventos.stackItem--contenedor-banner-principal--link-fiestas-eventos{
+    position: relative;
+}
+/*TotalLook*/
+.stackItem.stackItem--contenedor-banner-descuentos.stackItem--link-totalLook.stackItem--contenedor-banner-descuentos--link-totalLook{
+    position: relative;
+}
+/*Descuento 25%*/
+.stackItem.stackItem--contenedor-banner-descuentos.stackItem--link-25porciento.stackItem--contenedor-banner-descuentos--link-25porciento{
+    position: relative;
+}
+
+
+
+

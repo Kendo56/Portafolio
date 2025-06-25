@@ -1,0 +1,51 @@
+{
+  "menu#final": { /*Menu actualmente sin utilizar*/
+    "props": {
+      "orientation": "horizontal"
+    },
+    "children": [
+      "menu-item#1",
+      "menu-item#2",
+      "menu-item#3",
+      "menu-item#4",
+      "menu-item#5",
+      "menu-item#6"
+    ]
+  },
+  "menu-item#1": {
+    "props": { 
+      "label": "Camisas",
+      "href": "/camisas"
+    }
+  },
+  "menu-item#2": {
+    "props": {
+      "label": "Chaquetas",
+      "href": "/chaquetas"
+    }
+  },
+  "menu-item#3": {
+    "props": {
+      "label": "Camisas",
+      "href": "/camisas"
+    }
+  },
+  "menu-item#4": {
+    "props": {
+      "label": "Camisas",
+      "href": "/camisas"
+    }
+  },
+  "menu-item#5": {
+    "props": {
+      "label": "Camisas",
+      "href": "/camisas"
+    }
+  },
+  "menu-item#6": {
+    "props": {
+      "label": "Camisas",
+      "href": "/camisas"
+    }
+  }
+}
