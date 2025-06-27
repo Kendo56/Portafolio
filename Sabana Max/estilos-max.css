@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #D7C1A8;
+}
+/*Primero section*/
+.room {
+  width: 100%;
+  height: auto; /* 100% de la altura de la pantalla */
+  overflow: hidden;
+  
+}
+.contenido{
+    position: relative;
+}
+.contenido img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen se ajuste bien */
+}
+.contenido .western{
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: 20%;
+    left: 10%;
+    z-index: 1;
+}
+
+
+.contenido .texto {
+  position: absolute;
+  top: 53%;
+  left: 10%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  opacity: 1;
+  z-index: 1;
+  font-size: 1.6vw;
+}
+
+.ver-mas {
+  position: absolute;
+  top: 77%;
+  left: 18%;
+  padding: 5px 60px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  border-radius: 25px; /* Borde redondeado */
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+.ver-mas:hover {
+  background: yellow;
+  color: black;
+}
+@media (min-width: 1600px) {
+    .ver-mas {
+    left: 20%;
+    }
+}
+
+/*Section 2*/
+.room-2 {
+  width: 100%;
+  height: auto;
+}
+.contenido-femenine{
+  overflow: visible; /* Permite que la siguiente sección sobresalga */
+  position: relative;
+}
+.contenido-femenine img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+.contenido-femenine .fondo{
+    z-index: 0;
+}
+
+.contenido-femenine .femenine-touch{
+  position: absolute;
+  width: 24%;
+  height: auto;
+  top: 51%;
+  left: 18.6%;
+  z-index: 1;
+}
+
+.contenido-femenine .countryside-style{ 
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 55%;
+  left: 14.5%;
+  z-index: 1;
+}
+.contenido-femenine .folk-flair{ 
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 46%;
+  left: 21%;
+  z-index: 1;
+}
+.contenido-femenine .voyage{ 
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 42%;
+  left: 24%;
+  z-index: 1;
+}
+.contenido-femenine .timeless{ 
+  position: absolute;
+  width: 17%;
+  height: auto;
+  top: 44%;
+  left: 31%;
+  z-index: 1;
+}
+.contenido-femenine .texto{
+  position: absolute;
+  top: 68%;
+  left: 34%;
+  /* UI Properties */
+  text-align: left;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.contenido-femenine .texto-countryside{
+  position: absolute;
+  top: 72%;
+  left:35%;
+  /* UI Properties */
+  text-align: left;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.contenido-femenine .texto-folk-flair{
+  position: absolute;
+  top: 78%;
+  left:33%;
+  /* UI Properties */
+  text-align: left;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.contenido-femenine .texto-voyage{
+  position: absolute;
+  top: 76%;
+  left: 27%;
+  /* UI Properties */
+  text-align: left;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+/*Section 3*/
+.room-3 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.femenine-banners {
+  margin-top: -29%;
+  width: 50%; /*Tamaño del contenedor de los banners*/
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 15px; /*Separado horizontal*/
+}
+.container-femenine-2{
+  margin-top: 8%;
+}
+.container-femenine-1, .container-femenine-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.femenine-banner,
+.femenine-banner2,
+.zapatos {
+  width: 100%; /*Las imagenes ocuparan el 100% de sus contedores*/
+  height: auto; 
+}
+
+.container-zapatos {
+  position: relative;
+}
+.container-zapatos:hover .zapatos{
+  filter: brightness(0.6);
+}
+.carrito {
+  position: absolute;
+  left: 40%;
+  bottom: 5%;
+  width: 12%;
+  transition: all 0.1s ease-in-out; 
+}
+.container-zapatos:hover .carrito{
+  bottom: 45%;
+  width: 40px;
+  height: 40px;
+  right: 7.5%;
+}
+.compra{
+  position: absolute;
+  bottom: 38%;
+  right: 18%;
+  font-size: 1.1vw;
+  color: #FFFFFF;
+}
+.compra{
+  display: none;
+}
+.container-zapatos:hover .compra{
+  display: block;
+}
+/*Slider*/
+.slider-container {
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+/*Paginas*/
+.pagina-1{
+  position: absolute;
+  width: 15%;
+  top: 5%;
+  left: auto;
+  z-index: 1;
+}
+.pagina-2{
+  position: absolute;
+  width: 15%;
+  top: 5%;
+  left: 17%;
+  z-index: 1;
+}
+.pagina-3{
+  position: absolute;
+  width: 15%;
+  top: 5%;
+  left: 34.3%;
+  z-index: 1;
+}
+.pagina-4{
+  position: absolute;
+  width: 15%;
+  top: 5%;
+  left: 51%;
+  z-index: 1;
+}
+.pagina-5{
+  position: absolute;
+  width: 15%;
+  top: 5%;
+  left: 67.5%;
+  z-index: 1;
+}
+.pagina-6{
+  position: absolute;
+  width: 15%;
+  top: 5%;
+  left: 84%;
+  z-index: 1;
+}
+/*Blanco y negro*/
+.pagina-1-black{
+  position: absolute;
+  width: 15%;
+  top: 5%;
+  left: auto;
+  z-index: 1;
+}
+
+.pagina-2-black{
+  position: absolute;
+  width: 15%;
+  top: 5%;
+  left: 17%;
+  z-index: 1;
+}
+.pagina-3-black{
+  position: absolute;
+  width: 15%;
+  top: 5%;
+  left: 34.3%;
+  z-index: 1;
+}
+.pagina-4-black{
+  position: absolute;
+  width: 15%;
+  top: 5%;
+  left: 51%;
+  z-index: 1;
+}
+.pagina-5-black{
+  position: absolute;
+  width: 15%;
+  top: 5%;
+  left: 67.5%;
+  z-index: 1;
+}
+.pagina-6-black{
+  position: absolute;
+  width: 15%;
+  top: 5%;
+  left: 84%;
+  z-index: 1;
+}
+/*Numeracion*/
+.numero-1{
+  position: absolute;
+  width: 1.5%;
+  top: 40%;
+  left: 7%;
+  z-index: 2;
+}
+.numero-2{
+  position: absolute;
+  width: 1.5%;
+  top: 40%;
+  left: 24%;
+  z-index: 2;
+}
+.numero-3{
+  position: absolute;
+  width: 1.5%;
+  top: 40%;
+  left: 41%;
+  z-index: 2;
+}
+.numero-4{
+  position: absolute;
+  width: 1.5%;
+  top: 40%;
+  left: 58%;
+  z-index: 2;
+}
+.numero-5{
+  position: absolute;
+  width: 1.5%;
+  top: 40%;
+  left: 75%;
+  z-index: 2;
+}
+.numero-6{
+  position: absolute;
+  width: 1.5%;
+  top: 40%;
+  left: 91%;
+  z-index: 2;
+}
+/*Boton Agregar*/
+.add{
+  position: absolute;
+  width: 2%;
+  top: 75%;
+  left: 6.5%;
+  z-index: 2;
+}
+.add-2{
+  position: absolute;
+  width: 2%;
+  top: 75%;
+  left: 23.5%;
+  z-index: 2;
+}
+.add-3{
+  position: absolute;
+  width: 2%;
+  top: 75%;
+  left: 41%;
+  z-index: 2;
+}
+.add-4{
+  position: absolute;
+  width: 2%;
+  top: 75%;
+  left: 58%;
+  z-index: 2;
+}
+.add-5{
+  position: absolute;
+  width: 2%;
+  top: 75%;
+  left: 74.5%;
+  z-index: 2;
+}
+.add-6{
+  position: absolute;
+  width: 2%;
+  top: 75%;
+  left: 90.5%;
+  z-index: 2;
+}
+/*Ver mas*/
+.ver-mas-1{
+  position: absolute;
+  opacity: 0;
+  width: 5%;
+  top: 73%;
+  left: 5%;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.ver-mas-2{
+  position: absolute;
+  opacity: 0;
+  width: 5%;
+  top: 73%;
+  left: 22%;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+.ver-mas-3{
+  position: absolute;
+  opacity: 0;
+  width: 5%;
+  top: 73%;
+  left: 39.2%;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+.ver-mas-4{
+  position: absolute;
+  opacity: 0;
+  width: 5%;
+  top: 73%;
+  left: 56.5%;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+.ver-mas-5{
+  position: absolute;
+  opacity: 0;
+  width: 5%;
+  top: 73%;
+  left: 73%;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+.ver-mas-6{
+  position: absolute;
+  opacity: 0;
+  width: 5%;
+  top: 73%;
+  left: 89%;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/*Hover*/
+/*Slide 1*/
+.slides:hover #pagina-black, .slides:hover #add-general{
+  display: none;
+}
+.slides:hover #ver-mas-general{
+  opacity: 1;
+  top: 40%;
+  display: block;
+}
