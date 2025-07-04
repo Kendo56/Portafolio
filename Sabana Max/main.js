@@ -1,6 +1,6 @@
 
 let imgBannerSecundario = document.querySelector('#banner-secundario');//Banners
-let imgTitulos = document.querySelector('#titulo'); //Titulos
+let imgTitulos = document.querySelector('.titulo'); //Titulos
 let imgMiniBannerUno = document.querySelector('#mini-banner-1'); //Mini banner 1
 let imgMiniBannerDos = document.querySelector('#mini-banner-2'); //Mini banner 2
 let imgProductos = document.querySelector('#productos'); //Mini banner 2
@@ -206,15 +206,36 @@ for (let i = 0; i < button.length; i++) {
         imgTitulos.setAttribute('src', newUrlTitulos);
         textoGeneral.innerHTML = textos[i];
 
+        //Resetea el cambio
+        imgTitulos.style.width = '';
+        imgTitulos.style.top = '';
+        imgTitulos.style.left = '';
 
-        imgTitulos.classList.remove('countryside-style');
         textoGeneral.classList.remove('texto-countryside');
         BarraProgreso.classList.remove('barra-progreso-style');
 
 
-        // Si es la imagen 1, se le añade la clase countryside-style
+        //Titulos
         if (i === 1) {
-            imgTitulos.classList.add('countryside-style');
+            imgTitulos.style.width = '20%';
+            imgTitulos.style.top = '55%';
+            imgTitulos.style.left = '14.5%';
+        }else if (i === 2){
+            imgTitulos.style.width = '20%';
+            imgTitulos.style.top = '46%';
+            imgTitulos.style.left = '21%';
+        }else if (i === 3){
+            imgTitulos.style.width = '20%';
+            imgTitulos.style.top = '42%';
+            imgTitulos.style.left = '24%';
+        }else if (i === 4){
+            imgTitulos.style.width = '17%';
+            imgTitulos.style.top = '44%';
+            imgTitulos.style.left = '31%';
+        }else if (i === 5){
+            imgTitulos.style.width = '31%';
+            imgTitulos.style.top = '42%';
+            imgTitulos.style.left = '18%';
         }
         if (i === 1) {
             textoGeneral.classList.add('texto-countryside');
@@ -233,17 +254,12 @@ for (let i = 0; i < button.length; i++) { //Evento del botton
         imgTitulos.setAttribute('src', newUrlTitulos);
         textoGeneral.innerHTML = textos[i];
 
-
-        imgTitulos.classList.remove('folk-flair');
         textoGeneral.classList.remove('texto-folk-flair');
         BarraProgreso.classList.remove('barra-progreso-folk');
 
 
 
 
-        if (i === 2) {
-            imgTitulos.classList.add('folk-flair');
-        }
         if (i === 2) {
             textoGeneral.classList.add('texto-folk-flair');
         }
@@ -261,15 +277,12 @@ for (let i = 0; i < button.length; i++) {
         textoGeneral.innerHTML = textos[i];
 
 
-        imgTitulos.classList.remove('voyage');
         textoGeneral.classList.remove('texto-voyage');
         BarraProgreso.classList.remove('barra-progreso-voyage');
 
 
 
-        if (i === 3) {
-            imgTitulos.classList.add('voyage');
-        }
+
         if (i === 3) {
             textoGeneral.classList.add('texto-voyage');
         }
@@ -287,16 +300,11 @@ for (let i = 0; i < button.length; i++) {
         textoGeneral.innerHTML = textos[i];
 
 
-        imgTitulos.classList.remove('timeless');
         textoGeneral.classList.remove('texto-timeless');
         BarraProgreso.classList.remove('barra-progreso-timeless');
 
 
 
-
-        if (i === 4) {
-            imgTitulos.classList.add('timeless');
-        }
         if (i === 4) {
             textoGeneral.classList.add('texto-timeless');
         }
@@ -314,16 +322,12 @@ for (let i = 0; i < button.length; i++) {
         textoGeneral.innerHTML = textos[i];
 
 
-        imgTitulos.classList.remove('Esencia');
         textoGeneral.classList.remove('texto-esencia');
         BarraProgreso.classList.remove('barra-progreso-esencia');
 
 
 
 
-        if (i === 5) {
-            imgTitulos.classList.add('Esencia');
-        }
         if (i === 5) {
             textoGeneral.classList.add('texto-esencia');
         }
@@ -349,12 +353,7 @@ botonVerMas.addEventListener('click', () => {
 for (let f = 0; f < flechas.length; f++) {
     flechas[f].addEventListener('click', function () {
 
-        //remover las clases del  slide
-        BarraProgreso.classList.remove('barra-progreso-style');
-        BarraProgreso.classList.remove('barra-progreso-folk');
-        BarraProgreso.classList.remove('barra-progreso-voyage');
-        BarraProgreso.classList.remove('barra-progreso-timeless');
-        BarraProgreso.classList.remove('barra-progreso-esencia');
+
 
         // ✅ Si la flecha es la DERECHA, avanzamos
         if (flechas[f].classList.contains('derecha')) {
@@ -377,18 +376,6 @@ for (let f = 0; f < flechas.length; f++) {
 
 
         }
-        if (iActual === 1) {
-            BarraProgreso.classList.add('barra-progreso-style');
-        } else if (iActual === 2) {
-            BarraProgreso.classList.add('barra-progreso-folk');
-        } else if (iActual === 3) {
-            BarraProgreso.classList.add('barra-progreso-voyage');
-        } else if (iActual === 4) {
-            BarraProgreso.classList.add('barra-progreso-timeless');
-        } else if (iActual === 5) {
-            BarraProgreso.classList.add('barra-progreso-esencia');
-        }
-
         //  Disparamos un clic simulado sobre el slide actual,
         // para que se actualicen todos los elementos como ya lo tenías programado
         button[iActual].click();
