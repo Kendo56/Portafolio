@@ -1,0 +1,391 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+/*Primera seccion*/
+
+
+.marcha-1 {
+    position: relative;
+}
+
+.marcha-1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.h1-principal {
+    position: absolute;
+    width: 33% !important;
+    top: 33%;
+    left: 15%;
+}
+
+.h1-alternativo {
+    position: absolute;
+    width: 40% !important;
+    top: 37%;
+    left: 12%;
+}
+
+.h1-alternativo-dos {
+    position: absolute;
+    width: 40% !important;
+    top: 33%;
+    left: 12%;
+}
+
+.h1-alternativo-tres {
+    position: absolute;
+    width: 40% !important;
+    top: 35%;
+    left: 12%;
+}
+
+.h2-principal {
+    position: absolute;
+    top: 5%;
+    font-size: 18px;
+    right: 5%;
+    color: #ffffff;
+}
+
+@media (min-width: 1600px) {
+    .h2-principal {
+        font-size: 28px;
+    }
+}
+
+/*Segunda seccion*/
+.room2 {
+    position: absolute;
+    top: 20%;
+    left: 68%;
+    display: flex;
+    gap: 2%;
+    flex-direction: row;
+    width: 28%;
+}
+
+.fila1 {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fila1 img {
+    width: 100%;
+}
+
+/*Collins*/
+.collins-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.texto {
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+    align-items: center;
+    /*Para centarlo de ancho*/
+    justify-content: center;
+    /*Para centrarlo de alto*/
+    opacity: 0;
+    transition: opacity 0.3s ease 0.1s;
+}
+
+p {
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+span {
+    margin: 0;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+h6 {
+    width: 55%;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    height: 18px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #183254;
+}
+
+/*Monroe*/
+.monroe-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.texto2 {
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+    align-items: center;
+    /*Para centarlo de ancho*/
+    justify-content: center;
+    /*Para centrarlo de alto*/
+    opacity: 0;
+    transition: opacity 0.3s ease 0.1s;
+}
+
+/*Kendall*/
+.kendall-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.texto3 {
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+    align-items: center;
+    /*Para centarlo de ancho*/
+    justify-content: center;
+    /*Para centrarlo de alto*/
+    opacity: 0;
+    transition: opacity 0.3s ease 0.1s;
+}
+
+
+.fila2 {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fila2 img {
+    width: 100%;
+}
+
+
+/*Bardot*/
+.bardot-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.texto4 {
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+    align-items: center;
+    /*Para centarlo de ancho*/
+    justify-content: center;
+    /*Para centrarlo de alto*/
+    opacity: 0;
+    transition: opacity 0.3s ease 0.1s;
+}
+
+/*Salma*/
+.salma-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.texto5 {
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+    align-items: center;
+    /*Para centarlo de ancho*/
+    justify-content: center;
+    /*Para centrarlo de alto*/
+    opacity: 0;
+    transition: opacity 0.3s ease 0.1s;
+}
+
+
+.fila3 {
+    width: 33.34%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fila3 img {
+    width: 100%;
+}
+
+/*Lupita*/
+.lupita-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.texto6 {
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+    align-items: center;
+    /*Para centarlo de ancho*/
+    justify-content: center;
+    /*Para centrarlo de alto*/
+    opacity: 0;
+    transition: opacity 0.3s ease 0.1s;
+}
+
+/*Taylor*/
+.taylor-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.texto7 {
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+    align-items: center;
+    /*Para centarlo de ancho*/
+    justify-content: center;
+    /*Para centrarlo de alto*/
+    opacity: 0;
+    transition: opacity 0.3s ease 0.1s;
+}
+
+
+
+.collins-container:hover .texto,
+.monroe-container:hover .texto2,
+.kendall-container:hover .texto3,
+.bardot-container:hover .texto4,
+.salma-container:hover .texto5,
+.lupita-container:hover .texto6,
+.taylor-container:hover .texto7 {
+    background-color: rgba(20, 50, 84, .8);
+    opacity: 1;
+}
+
+/*Room 3*/
+
+.room3 {
+    display: none;
+    margin-top: 3%;
+    margin-left: 6%;
+}
+
+.mini-banners {
+    width: 50%;
+    display: flex;
+    gap: 30px;
+}
+
+/*Fila 1*/
+.fila1-second {
+    position: relative;
+    text-align: center;
+    width: 50%;
+}
+
+
+.izq {
+    position: relative;
+}
+
+.izq img {
+    width: 100%;
+}
+
+.up {
+    opacity: 0;
+    position: absolute;
+    width: 35%;
+    left: 3%;
+}
+
+.descripcion {
+    width: 90%;
+    margin: 3% 0;
+}
+
+.boton-comprar {
+    width: 44%;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 5px 40px;
+    background: #183254;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #183254;
+}
+
+.boton-comprar:hover {
+    background: transparent;
+    color: #183254;
+}
+
+/*Fila 2*/
+.fila2-second {
+    text-align: center;
+    width: 50%;
+}
+
+.der {
+    position: relative;
+}
+
+.der img {
+    width: 100%;
+}
+
+.h1-secundario {
+    width: 55%;
+}
+
+.descripcion-secundaria {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 200;
+    color: #183254;
+}
+
+.mini-banner-terciario {
+    margin: 5% 0;
+}
