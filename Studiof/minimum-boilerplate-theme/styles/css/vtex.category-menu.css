@@ -1,8 +1,0 @@
-.departmentLink{
-    color: #000000;
-    transition: transform 0.3s ease;
-    font-size: 13px;
-}
-.departmentLink:hover{
-    transform: scale(1.05); /* Aumenta un 5% */
-}
